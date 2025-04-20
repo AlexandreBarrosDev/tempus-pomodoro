@@ -3,12 +3,12 @@ import { TaskStateModel } from '../../models/TaskStateModel';
 export const initialTaskState: TaskStateModel = {
   tasks: [],
   secondsRemaining: 0,
-  formatSecondsRemaining: '00:00',
+  formattedSecondsRemaining: '00:00',
   activeTask: null,
-  currentCycle: 1,
+  currentCycle: 0,
   config: {
-    workTime: 25,
-    shortBreakTime: 5,
-    longBreakTime: 15,
+    focus: 25,
+    shortBreak: 5,
+    longBreak: 15,
   },
 };

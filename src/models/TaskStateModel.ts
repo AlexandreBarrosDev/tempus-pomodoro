@@ -3,12 +3,12 @@ import { TaskModel } from './TaskModels';
 export type TaskStateModel = {
   tasks: TaskModel[];
   secondsRemaining: number;
-  formatSecondsRemaining: string;
+  formattedSecondsRemaining: string;
   activeTask: TaskModel | null;
   currentCycle: number; //de 1 a 8
   config: {
-    workTime: number;
-    shortBreakTime: number;
-    longBreakTime: number;
+    focus: number;
+    shortBreak: number;
+    longBreak: number;
   };
 };
